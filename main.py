@@ -4,7 +4,7 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 from flask import *
 
-API_KEY = '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'
+API_KEY = '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'
 import random
 import openai
 from flask import Flask, redirect, render_template, request, url_for
