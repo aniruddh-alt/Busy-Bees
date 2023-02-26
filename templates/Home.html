@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+    </style>
+  <title>Busy Bees</title>
+
+  <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='logo.png') }}"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+</head>
+
+     <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        font-size: 36px;
+        color: #333;
+        margin-top: 0;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: #666;
+      }
+      .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      .cta-button:hover {
+        background-color: #0062cc;
+      }
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    </style>
+
+  <body>
+    <div class="container">
+    <style>
+        h1{text-align: centre;}
+        h4 {text-align: centre;}
+    </style>
+
+      <h1 >Busy Bees</h1>
+        <h4>Busy Bees, an interactive platform to nourish your curiosity. Children can learn new words, solve math problems
+    and explore concepts explained to them according to their age group.</h4>
+    <form action="/learn" method="post">
+        <input type="submit" value="Press to learn new words"/><br><br>
+    </form>
+    <form action="/math" method="post">
+        <input type="submit" value="Press to learn math"/><br><br>
+    </form>
+    <form action="/book" method="post">
+        <input type="submit" value="Press to learn concepts"/><br><br>
+    </form>
+    </div>
+
+</body>
+</html>

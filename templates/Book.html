@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <title>EduKid</title>
+  <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='logo.png') }}"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+<style>
+h1 {text-align: center;}
+
+</style>
+</head>
+
+<body>
+  <img src="{{ url_for('static', filename='logo.png') }}" class="icon" />
+
+  <form action="" method="post">
+    <h2>Enter your age </h2>
+    <input type="text" name="age" placeholder="age">
+    <h2>What do you want to learn?</h2>
+    <input type="text" name="book" placeholder="Learn!">
+    {% if result %}
+    <div class="result">{{ result }}</div>
+    {% endif %}
+
+    <input type="submit" value="Press to learn" /><br><br>
+  </form>
+    <form action="/" method="post">
+    <input type="submit" value="Press to go to homepage" />
+  </form><br><br>
+
+
+</body>
